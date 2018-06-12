@@ -14,7 +14,7 @@
               <br>
               <a href="javascript:void(0)" data-toggle="popover" [attr.title]="data.name" [attr.data-content]='data.price' (click)='mypopover()'>Toggle popover</a>
               <br>
-              <img src="http://localhost:3000/{{data.productImage}}" alt="not found" id='pimage'>
+              <img src="https://debanik.herokuapp.com/{{data.productImage}}" alt="not found" id='pimage'>
             </div>
             <div class="panel-footer">
             <button class='btn btn-danger' (click)='deletethis(data._id,i)'>Delete</button>
