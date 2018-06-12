@@ -3,6 +3,7 @@ import { AuthService } from '../auth.service';
 declare var $:any;
 import swal from 'sweetalert2';
 import { APP_ID_RANDOM_PROVIDER } from '@angular/core/src/application_tokens';
+import { backendURL } from '../../environments/environment';
 
 
 
@@ -28,7 +29,7 @@ export class LandingComponent implements OnInit {
   public seletedImageName;
   public url="";
   ngOnInit() {
-    
+    console.log(backendURL.cstring);
     this.showall()
     if(this.imageAction==true)
     {
