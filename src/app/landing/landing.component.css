@@ -1,0 +1,122 @@
+.wrapper
+{
+    margin:0 auto;
+    display:block;
+    max-width: 400px;
+}
+.box
+{
+    height: auto;
+    width: auto;
+    border: 1px solid black;
+    padding:12px;
+    border-radius:12px;
+    margin:12px;
+}
+.disabled {
+    opacity: 0.65; 
+    cursor: not-allowed;
+  }
+  .box2
+  {
+      height: 700px;
+      width: 100%;
+      overflow: scroll;
+
+  }
+  ::-webkit-scrollbar{
+      display: none;
+  }
+  #pimage
+  {
+      height:100px;
+      width:100px;
+  }
+  .showimage:hover
+  {
+      opacity: 0.8;
+      
+  }
+
+.showimage:hover .hoverchoose
+{
+    opacity: 1;
+}
+
+.hoverchoose
+{
+    opacity: 0;
+}
+
+
+
+
+
+
+
+.imagery {
+    position: relative;
+    width: auto;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: auto;
+    height: auto;
+    transition: background 0.5s ease;
+  }
+  
+  .imagery:hover .overlay {
+    display: block;
+    background: rgba(0, 0, 0, .3);
+  }
+  
+  #fooimage {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    left: 0;
+  }
+  
+
+  
+  .imagery:hover .title {
+    top: 0px;
+  }
+  
+  .button {
+    position: absolute;
+    width: 1px;
+    left:0;
+    top: 10px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity .35s ease;
+  }
+  
+  .button a {
+    width: 200px;
+    padding: 12px 48px;
+    text-align: center;
+    color: white;
+    border: solid 2px white;
+    z-index: 1;
+  }
+  
+  .imagery:hover .button {
+    opacity: 1;
+  }
+  
+  label {
+    cursor: pointer;
+    /* Style as you please, it will become the visible UI component. */
+ }
+ 
+#productImage1 {
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+ }
